@@ -1,4 +1,5 @@
 @CHARSET "UTF-8";
+
 .header {
 	text-align: center;
 }
@@ -8,9 +9,10 @@
 	margin-top: 40px;
 }
 
-.sign-form{
+.sign-form {
 	margin-top: 40px;
 }
+
 .sign-btn {
 	width: 100%;
 	margin-top: 15px;
@@ -20,46 +22,149 @@
 	margin-top: 15px;
 }
 
-.sign-in-la{
-	float:right;
+.sign-in-la {
+	float: right;
 	font-size: small;
 	font-weight: normal;
 	margin-top: 15px;
 }
 
-.sign-rules-la{
+.sign-rules-la {
 	font-size: small;
 	font-weight: normal;
 	float: left;
 	margin-top: 15px;
 }
 
-.sign-up{
-	position:relative;
-	left:30%;
-	margin-top:10px;
-	width:500px;
-	height:500px;
+.sign-up {
+	position: relative;
+	left: 30%;
+	margin-top: 10px;
+	width: 500px;
+	height: 480px;
 	background-color: white;
 	text-align: center;
 }
 
-.remember-me{
-	float:left;
+.remember-me {
+	float: left;
 	margin-top: 20px;
 }
 
-.sign-up-la{
+.sign-up-la {
 	float: right;
 	margin-top: 20px;
 }
 
-.sign-in{
-	position:relative;
-	left:30%;
-	margin-top:10px;
-	width:500px;
-	height:500px;
+.sign-in {
+	position: relative;
+	left: 30%;
+	margin-top: 10px;
+	width: 500px;
+	height: 480px;
 	background-color: white;
 	text-align: center;
+}
+
+#gray {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0px;
+	display: none;
+	z-index: 99;
+}
+
+#sign-in-page {
+	width: 1120px;
+	height: 500px;
+	position: absolute;
+	z-index: 100;
+	left: 400px;
+	top: 96px;
+}
+
+#sign-up-page {
+	width: 1120px;
+	height: 500px;
+	position: absolute;
+	z-index: 100;
+	left: 400px;
+	top: 96px;
+}
+
+.index-sidebar {
+	position: absolute;
+	margin-left: 73px;
+	margin-top: 5px;
+	width: 200px;
+	float: left;
+}
+
+.index-book{
+	position: absolute;
+	margin-left: 280px;
+	margin-top: 5px;
+	width: 770px;
+	float: left;
+}
+
+.book-pic {
+	position: relative;
+	float: left;
+	width: 115px;
+	height: 164px;
+}
+
+.book-info {
+	position: relative;
+	margin-left: 5px;
+	font-size: 12px;
+	height: 100%
+}
+
+.price-info {
+	font-size: 14px;
+	margin-top: 30px;
+}
+
+.small-btn {
+	text-align: center;
+	float: right;
+	width: 50px;
+	height: inherit;
+	float: right;
+	width: 50px;
+	height: inherit;
+	background-color: orange;
+}
+
+.book-left{
+	float: left;
+}
+
+.book-right{
+	float: right;
+}
+.index-main{
+	width:100%;
+	height: auto;
+}
+.footer {
+	position:relative;
+	top:1450px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer p {
+	text-align: center;
+	margin: 5px;
+	color: #555
+}
+
+.footer p a {
+	margin: 0 5px;
+	color: #555
 }

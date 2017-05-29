@@ -661,7 +661,7 @@ button, input:not ([type=radio] ):not ([type=checkbox] ), select {
 		width: 16.66666667%
 	}
 	.am-u-md-3 {
-		width: 25%
+		width: 20%
 	}
 	.am-u-md-4 {
 		width: 33.33333333%
@@ -1493,8 +1493,8 @@ a.am-btn-default:visited {
 }
 
 .am-btn-primary {
-	color: #fff;
-	background-color: #0e90d2;
+	color: rgba(229, 108, 12, 1);
+	background-color: rgba(230, 230, 230, 1);
 	border-color: #0e90d2
 }
 
@@ -1536,8 +1536,8 @@ a.am-btn-primary:visited {
 }
 
 .am-btn-secondary {
-	color: #fff;
-	background-color: #3bb4f2;
+	color: rgba(229, 108, 12, 1);
+	background-color: rgba(230, 230, 230, 1);
 	border-color: #3bb4f2
 }
 
@@ -2982,7 +2982,7 @@ output {
 	position: fixed;
 	right: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 98;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0)
 }
