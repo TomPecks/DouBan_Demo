@@ -22,12 +22,12 @@
 		<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
 			<form method="post" class="am-form">
 				<div class="sign-text">
-				<input type="text" name="" id="userName" value=""
+				<input type="text" name="" id="in-userName" value=""
 					placeholder="请输入用户名">
 				</div> 
 				<div class="sign-text">
 				<input type="password" name=""
-					id="password" value="" placeholder="请输入密码">
+					id="in-password" value="" placeholder="请输入密码">
 				</div>
 				<div class="am-cf">
 					<input type="submit" name="" value="登录豆瓣"

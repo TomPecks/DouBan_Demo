@@ -16,8 +16,8 @@ $(function(){
 		var x = e.pageX - offset.left;
 		var y = e.pageY - offset.top;
 		if(x<0||x>500||y<0||y>500){
-			$("#sign-in-page").fadeOut(1000);	
-			$("#gray").fadeOut(1000);
+			$("#sign-in-page").fadeOut(500);	
+			$("#gray").fadeOut(500);
 		}	    
 	});
 	
@@ -26,8 +26,8 @@ $(function(){
 		var x = e.pageX - offset.left;
 		var y = e.pageY - offset.top;
 		if(x<0||x>500||y<0||y>500){
-			$("#sign-up-page").fadeOut(1000);	
-			$("#gray").fadeOut(1000);
+			$("#sign-up-page").fadeOut(500);	
+			$("#gray").fadeOut(500);
 		}	    
 	});
 	
@@ -58,5 +58,15 @@ $(function(){
 		$("#sign-up-page").hide();
 		$("#sign-in-page").show();
 		login_center();
+	})
+	
+	$("#author").click(function(){
+		$("#author").addClass("am-active");
+		$("#article").removeClass("am-active");
+	})
+	
+	$("#article").click(function(){
+		$("#article").addClass("am-active");
+		$("#author").removeClass("am-active");
 	})
 })

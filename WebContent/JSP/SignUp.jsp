@@ -21,17 +21,17 @@
 	<div class="am-g sign-form">
 		<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
 			<form method="post" class="am-form">
-				<div class="sign-text">
-				<input type="text" name="" id="userName" value=""
-					placeholder="请输入用户名">
+				<div id="txt-username" class="sign-text am-form-group am-form-icon am-form-feedback">
+				<input type="text" name="" id="up-userName" value="" class="am-form-field"
+					placeholder="请输入用户名"><span id="ico-username" class="reg-span"  ></span>
 				</div> 
-				<div class="sign-text">
-				<input type="password" name=""
-					id="password" value="" placeholder="请输入密码">
+				<div id="txt-password" class="sign-text am-form-group am-form-icon am-form-feedback">
+				<input type="password" name="" class="am-form-field" 
+					id="up-password" value="" placeholder="请输入密码" ><span id="ico-password" class="reg-span" ></span>
 				</div>
-				<div class="sign-text">
-				<input type="text" name="" id="phoneNum" value=""
-					placeholder="请输入手机号">
+				<div id="txt-phonenum" class="sign-text am-form-group am-form-icon am-form-feedback">
+				<input type="text" name="" id="up-phoneNum" value="" class="am-form-field"
+					placeholder="请输入手机号"><span id="ico-phonenum" class="reg-span" ></span>
 				</div> 
 				<div class="am-cf">
 					<input type="submit" name="" value="注册豆瓣账号"
