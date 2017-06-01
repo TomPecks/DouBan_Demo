@@ -15,7 +15,7 @@
 	<div class="index-body">
 		<jsp:include page="Header.jsp"></jsp:include>
 
-		<div class="index-main">
+		<div class="index-main am-g" >
 			<jsp:include page="Sidebar.jsp"></jsp:include>
 
 			<div class="index-book">

@@ -1,5 +1,9 @@
 @CHARSET "UTF-8";
 
+.index-body {
+	
+}
+
 .header {
 	text-align: center;
 }
@@ -98,16 +102,24 @@
 	top: 96px;
 }
 
+.index-main {
+	position: relative;
+	width: 1050px;
+	margin-top: 55px;
+	left: 0px;
+	right: 0px;
+}
+
 .index-sidebar {
-	position: absolute;
-	margin-left: 73px;
+	position: relative;
+	margin-left: 30px;
 	width: 200px;
 	float: left;
 }
 
 .index-book {
-	position: absolute;
-	margin-left: 280px;
+	position: relative;
+	margin-left: 8px;
 	width: 770px;
 	float: left;
 }
@@ -163,17 +175,9 @@
 	float: right;
 }
 
-.index-main {
-	width: 100%;
-	height: auto;
-	position: relative;
-	top: 55px;
-}
-
 .footer {
-	width: 100%;
-	position: absolute;
-	margin-top: 1450px;
+	position: relative;
+	top: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -182,6 +186,13 @@
 	text-align: center;
 	margin: 5px;
 	color: #555
+}
+
+.footer hr {
+	width: 1000px;
+	height: 3px;
+	border: none;
+	border-top: 3px ridge orange;
 }
 
 .footer p a {
