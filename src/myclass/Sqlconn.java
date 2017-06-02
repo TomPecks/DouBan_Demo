@@ -9,7 +9,7 @@ public class Sqlconn {
 	public Connection myconn()
 			throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
-		url = url + "DouBan";
+		url = url + "read";
 		Connection conn = null;
 		try {
 			conn = DriverManager.getConnection(url, "sa", "sa123");

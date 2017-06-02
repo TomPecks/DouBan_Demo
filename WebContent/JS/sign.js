@@ -53,7 +53,7 @@ $(function() {
 	$("#up-phonenum").change(function() {
 		var phonen = /^1[34578]\d{9}$/;
 		var value = $("#up-phonenum").val();
-		if (value.length == 0 || !phonen.test(value)) {
+		if (value.length == 0 || !value.match(phonen)) {
 			$("#txt-phonenum").addClass("am-form-error");
 			$("#ico-phonenum").addClass("am-icon-times");
 			$("#ico-phonenum").show();

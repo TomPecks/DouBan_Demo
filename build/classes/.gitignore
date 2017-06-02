@@ -1,4 +1,3 @@
-/struts.xml
-/mybean/
-/myclass/
-/myservlet/
+/log4j2.xml
+/org/
+/velocity.properties
