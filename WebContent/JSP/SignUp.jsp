@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>sign-up</title>
 <script type="text/javascript" src="../JS/jquery.js"></script>
 <script type="text/javascript" src="../JS/sign.js"></script>
 <script type="text/javascript" src="../JS/index.js"></script>
@@ -20,23 +19,23 @@
 		</div>
 		<div class="am-g sign-form">
 			<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-				<form id="up-form" action="St_login.action" method="post"
+				<form id="up-form" action="St_register.action" method="post"
 					class="am-form">
 					<div id="txt-username"
 						class="sign-text am-form-group am-form-icon am-form-feedback">
-						<input type="text" name="" id="up-userName" value=""
+						<input type="text" name="up_userName" id="up-userName" value=""
 							class="am-form-field" placeholder="请输入用户名"><span
 							id="ico-username" class="reg-span"></span>
 					</div>
 					<div id="txt-password"
 						class="sign-text am-form-group am-form-icon am-form-feedback">
-						<input type="password" name="" class="am-form-field"
+						<input type="password" name="up_password" class="am-form-field"
 							id="up-password" value="" placeholder="请输入密码"><span
 							id="ico-password" class="reg-span"></span>
 					</div>
 					<div id="txt-phonenum"
 						class="sign-text am-form-group am-form-icon am-form-feedback">
-						<input type="text" name="" id="up-phoneNum" value=""
+						<input type="text" name="up_phonenum" id="up-phonenum" value=""
 							class="am-form-field" placeholder="请输入手机号"><span
 							id="ico-phonenum" class="reg-span"></span>
 					</div>

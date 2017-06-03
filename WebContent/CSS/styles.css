@@ -149,7 +149,7 @@
 	float: right;
 	width: 50px;
 	height: inherit;
-	background-color: orange;
+	background-color: rgba(201, 231, 201, 1);
 }
 
 .author-pic {

@@ -3,9 +3,10 @@ $(function() {
 		var usern = /^[a-zA-Z0-9_]{1,}$/;
 		var name = $("#up-userName").val();
 		if (name.length == 0 || !name.match(usern)) {
+			$("#txt-username").removeClass("am-form-success");
+			$("#ico-username").removeClass("am-icon-check");
 			$("#txt-username").addClass("am-form-error");
 			$("#ico-username").addClass("am-icon-times");
-			$("#ico-username").show();
 			$("#up-userName").focus();
 		} else {
 			$.ajax({
@@ -18,8 +19,8 @@ $(function() {
 				},
 				success : function(data) {
 					if (data == "yes") {
-						$("#txt-username").removeClass("am-form-error");
 						$("#ico-username").removeClass("am-icon-times");
+						$("#txt-username").removeClass("am-form-error");		
 						$("#txt-username").addClass("am-form-success");
 						$("#ico-username").addClass("am-icon-check");
 					} else {
@@ -38,13 +39,14 @@ $(function() {
 	$("#up-password").change(function() {
 		var pass = $("#up-password").val();
 		if (pass.length == 0) {
+			$("#txt-password").removeClass("am-form-success");
+			$("#ico-password").removeClass("am-icon-check");
 			$("#txt-password").addClass("am-form-error");
 			$("#ico-password").addClass("am-icon-times");
-			$("#ico-password").show();
 			$("#up-password").focus();
 		} else {
-			$("#txt-password").removeClass("am-form-error");
 			$("#ico-password").removeClass("am-icon-times");
+			$("#txt-password").removeClass("am-form-error");
 			$("#txt-password").addClass("am-form-success");
 			$("#ico-password").addClass("am-icon-check");
 		}
@@ -54,13 +56,15 @@ $(function() {
 		var phonen = /^1[34578]\d{9}$/;
 		var value = $("#up-phonenum").val();
 		if (value.length == 0 || !value.match(phonen)) {
+			$("#txt-phonenum").removeClass("am-form-success");
+			$("#ico-phonenum").removeClass("am-icon-check");
 			$("#txt-phonenum").addClass("am-form-error");
 			$("#ico-phonenum").addClass("am-icon-times");
 			$("#ico-phonenum").show();
 			$("#up-phonenum").focus();
 		} else {
-			$("#txt-phonenum").removeClass("am-form-error");
 			$("#ico-phonenum").removeClass("am-icon-times");
+			$("#txt-phonenum").removeClass("am-form-error");
 			$("#txt-phonenum").addClass("am-form-success");
 			$("#ico-phonenum").addClass("am-icon-check");
 		}
@@ -72,6 +76,8 @@ $(function() {
 						&& $('#up-password').val() != ""
 						&& $('#up-phonenum').val() != "") {
 					$('#up-form').submit();
+				}else{
+					return false;
 				}
 			})
 

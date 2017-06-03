@@ -9,5 +9,9 @@
 			<result name="succ">JSP/Index.jsp</result>
 			<result name="err">JSP/Index.jsp</result>
 		</action>
+		<action name="St_register" class="mybean.St_register">
+			<result name="succ">JSP/Index.jsp</result>
+			<result name="err">JSP/Index.jsp</result>
+		</action>
 	</package>
 </struts>
