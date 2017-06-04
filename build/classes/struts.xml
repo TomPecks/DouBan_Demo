@@ -4,14 +4,17 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
 	<package name="mybean" extends="struts-default">
-		<action name="St_login" class="mybean.St_login">
+		<action name="St_login" class="mybean.St_login" method="execute">
 			<result name="succ">JSP/Index.jsp</result>
-			<result name="err">JSP/Index.jsp</result>
 		</action>
-		<action name="St_register" class="mybean.St_register">
+		<action name="St_register" class="mybean.St_register" method="execute">
 			<result name="succ">JSP/Index.jsp</result>
-			<result name="err">JSP/Index.jsp</result>
+			<result name="fail"></result>
 		</action>
+		<action name="CheckName" class="mybean.CheckName" method="ajaxexecute" />
+		<action name="CheckPass" class="mybean.CheckPass" method="ajaxexecute" />
 	</package>
+	
 </struts>

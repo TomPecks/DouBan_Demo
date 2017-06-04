@@ -19,7 +19,7 @@
 		</div>
 		<div class="am-g sign-form">
 			<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-				<form id="up-form" action="St_register.action" method="post"
+				<form id="up-form" action="../St_register!execute" method="post"
 					class="am-form">
 					<div id="txt-username"
 						class="sign-text am-form-group am-form-icon am-form-feedback">

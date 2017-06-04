@@ -12,7 +12,7 @@ $(function() {
 			$.ajax({
 				type : "post",
 				dataType : "text",
-				url : "../CheckName",
+				url : "../CheckName!ajaxexecute",
 				contentType : "application/x-www-form-urlencoded",
 				data : {
 					username : name
@@ -25,6 +25,10 @@ $(function() {
 						$("#ico-username").addClass("am-icon-check");
 					} else {
 						alert("用户名：[" + data + "]已经存在，请换一个。");
+						$("#txt-username").removeClass("am-form-success");
+						$("#ico-username").removeClass("am-icon-check");
+						$("#txt-username").addClass("am-form-error");
+						$("#ico-username").addClass("am-icon-times");
 						$('#up-userName').val("");
 						$('#up-userName').focus();
 					}
@@ -81,4 +85,34 @@ $(function() {
 				}
 			})
 
+	$("#in-submit").click(function(){
+		var name = $("#in-userName").val();
+		var pass = $('#in-password').val();
+		if(name != "" && pass != "" ){
+			$.ajax({
+				type : "post",
+				dataType : "text",
+				url : "../CheckPass!ajaxexecute",
+				contentType : "application/x-www-form-urlencoded",
+				data : {
+					username : name,
+					password: pass
+				},
+				success : function(data) {
+					if (data == "yes") {
+						$('#in-form').submit();
+					} else {
+						alert("密码和用户名不一致！");
+						return false;
+					}
+				},
+				error : function(XMLResponse) {
+					return false;
+					alert(XMLResponse.responseText);
+				}
+			});
+		}else{
+			return false;
+		}
+	})
 })

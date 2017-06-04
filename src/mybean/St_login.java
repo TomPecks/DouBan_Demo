@@ -6,44 +6,31 @@ import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 
 public class St_login implements Action {
-	String userName;
-	String password;
-	String phoneNum;
+	String in_userName;
+	String in_password;
 
-	public String getUserName() {
-		return userName;
+	public String getIn_password() {
+		return in_password;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setIn_password(String in_password) {
+		this.in_password = in_password;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getIn_userName() {
+		return in_userName;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getPhoneNum() {
-		return phoneNum;
-	}
-
-	public void setPhoneNum(String phoneNum) {
-		this.phoneNum = phoneNum;
+	public void setIn_userName(String in_userName) {
+		this.in_userName = in_userName;
 	}
 
 	@Override
 	public String execute() throws Exception {
 		Map session = ActionContext.getContext().getSession();
-		String u = getUserName();
-		String p = getPassword();
-		session.put("userName", u);
-		if(u.equals("abc"))
-			return "succ";
-		else
-			return "err";
+		String u = getIn_userName();
+		session.put("username", u);
+		return "succ";
 	}
 
 }

@@ -20,17 +20,17 @@
 	</div>
 	<div class="am-g sign-form">
 		<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-			<form method="post" class="am-form">
+			<form id="in-form" action="../St_login" method="post" class="am-form">
 				<div class="sign-text">
-				<input type="text" name="" id="in-userName" value=""
+				<input type="text" name="in_userName" id="in-userName" value=""
 					placeholder="请输入用户名">
 				</div> 
 				<div class="sign-text">
-				<input type="password" name=""
+				<input type="password" name="in_password"
 					id="in-password" value="" placeholder="请输入密码">
 				</div>
 				<div class="am-cf">
-					<input type="submit" name="" value="登录豆瓣"
+					<input type="submit" name="" value="登录豆瓣" id="in-submit"
 						class="am-btn am-btn-primary am-btn-sm am-fl sign-btn">
 				</div>
 				<div class="remember-me">

@@ -61,8 +61,8 @@ public class St_register implements Action {
 		}
 		if(m != 0){
 			session.put("userName", u1);
-			return "yes";
-		}else return "no";
+			return "succ";
+		}else return "fail";
 		
 	}
 
